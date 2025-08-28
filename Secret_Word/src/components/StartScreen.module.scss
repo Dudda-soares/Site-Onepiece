@@ -1,0 +1,36 @@
+@use '../style/variaveis' as *;
+@use '../style/mixin' as *;
+
+.start{
+    height: 80vh;
+
+    .startTitle {
+    font-size: 5.9em;
+    font-weight: normal;
+    font-family: $font-title;
+    letter-spacing: 8px;
+    -webkit-text-stroke-width: 4px; /* largura da borda */
+    -webkit-text-stroke-color:$borderAzul; /* cor da borda */
+    text-shadow: 13px 0px 1px $borderAzul;
+    color: $corPalha;
+
+    @include respond-between(xs, sm){
+        font-size: 3.7em;
+        letter-spacing: 0;
+    }
+    
+    }
+
+    .startLogo{
+        width: 200px;
+        height: 200px;
+        display: flex;
+        margin-bottom: 30px;
+        justify-self: center;
+
+        @include respond-between(xs,sm){
+            width: 150px;
+            height: 150px;
+        }
+    }
+}

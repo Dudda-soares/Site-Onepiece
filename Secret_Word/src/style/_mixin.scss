@@ -1,0 +1,57 @@
+@use 'sass:map';
+@use "../style/variaveis" as *;
+
+@mixin span-base{
+     
+        margin-top: 10px;
+        display: flex;
+        background-color: $corRedLuffy;
+        width: 50px;
+        height: 50px;
+        font-weight: normal;
+        justify-content: center;
+        font-size: 30px;
+        letter-spacing: 2px;
+        align-items: center;
+        border: 8px solid $borderVermelha;
+        border-radius: 100%;
+        box-shadow: 1px 1px 1px 1px $corBlack;
+        font-family: "Archivo Black", sans-serif;
+}
+
+@mixin base-btn {
+
+        background-color: $corRedLuffy;
+        color: $corTxtBranco;
+        font-family: $font-btn;
+        padding: 0 45px;
+        border-radius: 25px;
+        border: 1px solid $corRedLuffy;
+        height: 80px;
+        text-transform: uppercase;
+        font-weight: bold;
+        font-size: 1.5rem;
+        cursor: pointer;
+        transition: 0.4s;
+        box-shadow: 3px 3px 0px 5px #af0909ea;
+        
+       &:hover{
+                border: 1px solid $corBtnHover;
+                background-color: $corBtnHover;
+        }
+
+        @include respond-between(xs, sm){
+                width: 78%;
+                font-size: 1.4rem;
+        }
+}
+@mixin respond-between($min, $max){
+        @media (min-width: map.get($breakpoints, $min)) and (max-width: map.get($breakpoints, $max)){
+                @content;
+        }
+}
+@mixin respond-to($breakpoint){
+        @media (max-width: map.get($breakpoints, $breakpoint)){
+                @content;
+        }
+}

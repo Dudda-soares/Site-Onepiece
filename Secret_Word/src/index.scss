@@ -1,0 +1,36 @@
+@use './style/variaveis' as *;
+@use './style/mixin' as *;
+
+html, body{
+    height: 100%;
+}
+body{
+    position: relative;
+    font-family: $font-padrao;
+    margin: 0;
+    padding: 0;
+    background:repeating-conic-gradient($corCeu 0deg 10deg, $corBgGradiente 10deg 20deg, $corCeu 20deg 30deg);
+    border-radius: 50%;
+    color: $corTxtBranco;
+    
+    &::before{ 
+        content: "";
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: $corBgBody; 
+        opacity: 2.6;
+        z-index: -1;
+    }
+}
+
+button{
+   @include base-btn;
+
+   &:hover{
+       border: 1px solid $corBtnHover;
+       background-color: $corBtnHover;
+   }
+}
