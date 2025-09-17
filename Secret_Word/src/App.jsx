@@ -67,9 +67,7 @@ function App() {
     //cria um array com cada letra
     let letraDaPalavra = palavra.split("")
 
-    console.log(categoria, palavra);
-    console.log(letraDaPalavra);
-    //padroniza o case da letra
+    
     letraDaPalavra = letraDaPalavra.map((l) => l.toLowerCase())
 
     //preencher estados
