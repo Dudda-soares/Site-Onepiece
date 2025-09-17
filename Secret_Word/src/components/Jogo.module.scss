@@ -178,6 +178,14 @@
         @include respond-between(xs,sm){
             font-size: 0.9em;
         }
+
+        span{
+            font-size: .7em;
+            border: none;
+            text-shadow:none;
+            color: #ccc;
+
+        }
     }
     .letraContainer{
         position: static;

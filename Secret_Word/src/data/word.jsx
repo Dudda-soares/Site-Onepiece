@@ -6,7 +6,7 @@ export const wordsList = {
     yonkous: ["Shanks", "BarbaBranca", "Kaido", "BigMom", "BarbaNegra"],
     organizações: ["Marinha", "CP9", "CP0", "Revolucionários", "BaroqueWorks"],
     espadasFamosas: ["Wado Ichimonji", "Shusui", "Enma", "Yoru", "Kikoku"],
-    ilhasImportantes: ["Dressrosa", "Wano", "Punk Hazard", "Egghead", "EniesLobby", "Waterseven"],
-    tiposHaki: ["Armamento", "Observação", "Do Conquistador"],
+    ilhasImportantes: ["Dressrosa", "Wano", "PunkHazard", "Egghead", "EniesLobby", "Waterseven"],
+    tiposHaki: ["Armamento", "Observação", "Conquistador"],
     recompensasAltas: ["Luffy", "Zoro", "Kid", "Law", "BarbaNegra", "Buggy"]
 }

@@ -45,7 +45,7 @@ const Jogo = ({verificarLetra, escolhaWord, escolhaCategoria,letras, letrasAdivi
         
         </div>
         
-            <p className={Style.tentativa}>Tente adivinha uma letra da palavra: </p>
+            <p className={Style.tentativa}>Tente adivinha uma letra da palavra: <span>(As palavras não possui espaços)</span> </p>
         
         <div className={Style.letraContainer}>
             <div className={Style.chuteLetraContainer}>
