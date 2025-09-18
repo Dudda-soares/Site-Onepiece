@@ -67,7 +67,7 @@ const Jogo = ({verificarLetra, escolhaWord, escolhaCategoria,letras, letrasAdivi
             <span
                 key={i}
                 className="flex items-center justify-center 
-                         h-14 w-14 text-2xl
+                         h-14 w-14 text-[34px]
                          sm:h-16 sm:w-16 sm:text-3xl 
                          md:h-20 md:w-20 md:text-4xl 
                          lg:h-24 lg:w-24 lg:text-6xl 
