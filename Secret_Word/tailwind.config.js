@@ -16,6 +16,9 @@ export default withMT({
         rubik: ["Rubik", "sans-serif"],
       },
       colors:{
+        "ceu":"#4ec5f1",
+        "grad":"#0077be",
+        "cbody":"#246ba693",
         "palha":"#e5c100",
         "redLuffy":"#d62828",
         "box-shadow-red":"#af0909ea",
@@ -28,6 +31,7 @@ export default withMT({
         "yellowB":"#bea202",
         "cor-container-palavra":"#015c919c",
         "quadrado-vazio":"#f3e308",
+        "black":"#000000",
 
       },
       textShadow: {
@@ -38,8 +42,9 @@ export default withMT({
         boxShadow: {
             'blue': '3px 4px 20px 20px #015c91',
             'red':' 3px 3px 0px 5px #af0909ea',
-            'yellowB':' 3px 3px 0px 5px #bea202',
+            'yellowB':' 4px 3px 0px 5px #bea202',
             'sombraB': '2px 2px 0px 6px #0046a1',
+            'blueb':'4px 5px 4px #00306e',
         },
       lineHeight: {
         extraLoos: "94px",

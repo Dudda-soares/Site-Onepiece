@@ -4,6 +4,13 @@
 @tailwind components;   
 @tailwind utilities;
 
+html,body{
+    height: 100%;
+}
+body{
+    @apply relative font-roboto m-0 p-0 bg-no-repeat text-white bg-conic before:fixed before:top-0 before:left-0 before:w-full before:h-full before:bg-cbody before:bg-config;
+}
+
 @layer utilities{
     .text-stroke-blue{
         -webkit-text-stroke-width: 4px; /* largura da borda */
@@ -11,6 +18,12 @@
     }
     .text-shadow{
         text-shadow:13px 0px 1px #00306e;
+    }
+    .text-shadow-yellow{
+        text-shadow:13px 0px 1px #e5c100;
+    }
+    .text-shadow-sm{
+        text-shadow: 4px 5px 4px #00306e;
     }
     .text-shadow-black{
         text-shadow: 1px 1px 1px #000000;
@@ -23,6 +36,14 @@
     }
     .box-shadow-blue{
         box-shadow: 3px 4px 20px 20px #015c91;
+    }
+    .bg-conic{
+        background:repeating-conic-gradient(#4ec5f1 0deg 10deg,#0077be 10deg 20deg, #4ec5f1 20deg 30deg);
+    }
+    .bg-config{
+        content: "";
+        opacity: 2.6;
+        z-index: -1;
     }
    
 }
