@@ -60,5 +60,12 @@ body::before {
             background: repeating-conic-gradient(#4ec5f1 0deg 10deg,#0077be 10deg 20deg,#4ec5f1 20deg 30deg);
         }
     }
+    .bg-conic-ios {
+        background: repeating-conic-gradient(
+            #4ec5f1 0deg 10deg,
+            #0077be 10deg 20deg,
+            #4ec5f1 20deg 30deg
+        );
+    }
    
 }
