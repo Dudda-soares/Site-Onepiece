@@ -14,53 +14,53 @@
         width: 90%;
     }
 
-    h1{
-        font-size: 4.9em;
-        font-family: $font-title;
-        letter-spacing: 4px;
-        font-weight: normal;
-        line-height: 65px;
-        -webkit-text-stroke-width: 4px; /* largura da borda */
-        -webkit-text-stroke-color:$borderAzul; /* cor da borda */
-        text-shadow: 13px 0px 1px $borderAzul;
-        color: $corPalha;
+    // h1{
+    //     font-size: 4.9em;
+    //     font-family: $font-title;
+    //     letter-spacing: 4px;
+    //     font-weight: normal;
+    //     line-height: 65px;
+    //     -webkit-text-stroke-width: 4px; /* largura da borda */
+    //     -webkit-text-stroke-color:$borderAzul; /* cor da borda */
+    //     text-shadow: 13px 0px 1px $borderAzul;
+    //     color: $corPalha;
 
-        @include respond-between(xs, sm){
-            font-size: 3.3rem;
-            letter-spacing: 1px;
-            line-height: 49px;
-            text-shadow:6px 1px 1px $borderAzul;
-        }
-    }
+    //     @include respond-between(xs, sm){
+    //         font-size: 3.3rem;
+    //         letter-spacing: 1px;
+    //         line-height: 49px;
+    //         text-shadow:6px 1px 1px $borderAzul;
+    //     }
+    // }
 
-    .dicas{
-        position: static;
-        display: flex;
-        flex-direction: column;
-        width: 35%;
-        align-items: center;
-        padding: 25px;
-        border-radius: 15px;
-        border: 13px solid $corSombraAzul;
-        background-color: $corBgDicasChute;
-        justify-self: center;
+    // .dicas{
+    //     position: static;
+    //     display: flex;
+    //     flex-direction: column;
+    //     width: 35%;
+    //     align-items: center;
+    //     padding: 25px;
+    //     border-radius: 15px;
+    //     border: 13px solid $corSombraAzul;
+    //     background-color: $corBgDicasChute;
+    //     justify-self: center;
         
-        @include respond-between(xs,sm){
-            width:87%;
-        }        
-        @include respond-between(sm, md){
-            width: 90%;
-        }
-         @include respond-between(md, xl){
-            width: 60%;
-        }
-        span{
-            margin-top: 10px;
-            font-size: 25px;
-            color: #fd4343;
-            text-shadow: 1px 1px 2px #6d0707;
-        }
-    }
+    //     @include respond-between(xs,sm){
+    //         width:87%;
+    //     }        
+    //     @include respond-between(sm, md){
+    //         width: 90%;
+    //     }
+    //      @include respond-between(md, xl){
+    //         width: 60%;
+    //     }
+    //     span{
+    //         margin-top: 10px;
+    //         font-size: 25px;
+    //         color: #fd4343;
+    //         text-shadow: 1px 1px 2px #6d0707;
+    //     }
+    // }
     .dicasPonto{
         display: flex;
         text-align:justify;

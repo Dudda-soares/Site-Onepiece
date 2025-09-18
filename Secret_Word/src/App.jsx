@@ -159,7 +159,7 @@ function App() {
 
   return (
     <>
-    <div className="App">
+    <div className="App flex flex-col items-center justify-start sm:justify-center text-center min-h-screen max-w-[1920px] mx-auto p-4">
       {estagioJogo === 'start' && <StartScreen iniciaJogo={iniciaJogo}/>}
       {estagioJogo === 'game' && <Jogo verificarLetra={verificarLetra} escolhaWord={escolhaWord} escolhaCategoria={escolhaCategoria} letras={letras} letrasAdivinhadas={letrasAdivinhadas} letrasErradas={letrasErradas} chances={chances}  pontos={pontos}       />}
       {estagioJogo === 'end' && <GameOver reset={reset} pontos={pontos} />}

@@ -1,12 +1,12 @@
 export const wordsList = {
     
     nomesTripulação: ["Luffy", "Zoro", "Nami", "Usopp", "Sanji", "Chopper", "Robin", "Franky", "Brook", "Jinbe"],
-    navios: ["GoingMerry", "ThousandSunny", "RedForce", "Oro Jackson", "MobyDick"],
+    navios: ["Going Merry", "Thousand Sunny", "Red Force", "Oro Jackson", "Moby Dick"],
     almirantes: ["Akainu", "Aokiji", "Kizaru", "Fujitora", "Ryokugyu"],
-    yonkous: ["Shanks", "BarbaBranca", "Kaido", "BigMom", "BarbaNegra"],
-    organizações: ["Marinha", "CP9", "CP0", "Revolucionários", "BaroqueWorks"],
+    yonkous: ["Shanks", "Barba Branca", "Kaido", "Big Mom", "Barba Negra"],
+    organizações: ["Marinha", "CP 9", "CP 0", "Revolucionários", "Baroque Works"],
     espadasFamosas: ["Wado Ichimonji", "Shusui", "Enma", "Yoru", "Kikoku"],
-    ilhasImportantes: ["Dressrosa", "Wano", "PunkHazard", "Egghead", "EniesLobby", "Waterseven"],
+    ilhasImportantes: ["Dressrosa", "Wano", "Punk Hazard", "Egghead", "Enies Lobby", "Waterseven"],
     tiposHaki: ["Armamento", "Observação", "Conquistador"],
-    recompensasAltas: ["Luffy", "Zoro", "Kid", "Law", "BarbaNegra", "Buggy"]
+    recompensasAltas: ["Luffy", "Zoro", "Kid", "Law", "Barba Negra", "Buggy"]
 }

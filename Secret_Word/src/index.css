@@ -1,0 +1,28 @@
+@import url("https://fonts.googleapis.com/css2?family=Archivo+Black&family=Bagel+Fat+One&family=Luckiest+Guy&family=Roboto:ital,wght@0,100..900;1,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
+
+@tailwind base;
+@tailwind components;   
+@tailwind utilities;
+
+@layer utilities{
+    .text-stroke-blue{
+        -webkit-text-stroke-width: 4px; /* largura da borda */
+        -webkit-text-stroke-color:#00306e;
+    }
+    .text-shadow{
+        text-shadow:13px 0px 1px #00306e;
+    }
+    .text-shadow-black{
+        text-shadow: 1px 1px 1px #000000;
+    }
+    .bg-red{
+        background-color: #d62828;
+    }
+    .box-shadow-red{
+       box-shadow: 3px 3px 0px 5px #af0909ea;
+    }
+    .box-shadow-blue{
+        box-shadow: 3px 4px 20px 20px #015c91;
+    }
+   
+}
