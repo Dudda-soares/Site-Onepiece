@@ -46,7 +46,7 @@ const Jogo = ({verificarLetra, escolhaWord, escolhaCategoria,letras, letrasAdivi
                 : "flex flex-wrap justify-center gap-2 sm:gap-4"
             }`}>
             {letras.map((ltr, i) => {
-                if (ltr === " ") {
+                if (ltr === "-") {
                     return (
                         <span
                         key={i}
@@ -98,7 +98,7 @@ const Jogo = ({verificarLetra, escolhaWord, escolhaCategoria,letras, letrasAdivi
         <p className="m-6 text-sm sm:text-base text-shadow-black text-tbase text-center ">
             Tente adivinha uma letra da palavra: 
             <span className='text-xs text-gray-400'>
-                (As palavras não possui espaços)
+                (O "-" é o espaço da palavra)
             </span> 
         </p>
         

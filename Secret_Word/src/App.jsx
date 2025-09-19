@@ -64,11 +64,24 @@ function App() {
     //escolha word e escolha categoria
     const {palavra, categoria} = escolhaWordAndCategoria()
 
+    
+    // const palavrab = palavra.trim()
+    const palavrab = palavra.replace(/\s+/g,"-")
+    
     //cria um array com cada letra
-    let letraDaPalavra = palavra.split("")
+    let letraDaPalavra = palavrab.split("")
+
+    let totalPrenchido = letraDaPalavra.filter(c => c !== "").length
+  
 
     
+    
     letraDaPalavra = letraDaPalavra.map((l) => l.toLowerCase())
+
+    
+
+    
+     
 
     //preencher estados
 
@@ -119,14 +132,20 @@ function App() {
     setLetrasErradas([])
   };
 
+
   
   
   //verifica se condicao e vencedor
   useEffect(()=>{
     const letraUnica = [...new Set(letras)]
     
+    
+    const letrasPrenchidas = [...new Set([...letrasAdivinhadas, '-'])];
+
+    const isWinner = letraUnica.every(l => letrasPrenchidas.includes(l));
+
     if(estagioJogo === 'game'&&
-      letrasAdivinhadas.length === letraUnica.length){
+       isWinner){
       //add scrore
       setPontos((atualPontos) => atualPontos +=  100 )
       
